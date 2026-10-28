@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- The tab icon. The file lives in the "public" folder, which is served from the site root,
+         so "/favicon.png" works on every page (even on a nested address like /auth/github/callback).
+         The apple-touch-icon is the icon iPhones use when the site is saved to the home screen. -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Colors the browser's own bar (mobile Chrome address bar, Safari tab bar) to match the app.
+         #030712 is gray-950, the dark page color set in App.jsx. -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
+
+    <!-- Tab title and the description search engines show -->
+    <title>CodeLoop | Spaced revision for DSA</title>
+    <meta
+      name="description"
+      content="CodeLoop schedules your DSA problem revisions automatically, so you revisit what you solved before you forget it."
+    />
+
+    <!-- The preview shown when the link is shared in WhatsApp, Slack, LinkedIn and similar apps -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodeLoop" />
+    <meta property="og:title" content="CodeLoop | Spaced revision for DSA" />
+    <meta
+      property="og:description"
+      content="Solve it once. Remember it for good. CodeLoop schedules your DSA problem revisions automatically."
+    />
+
+    <!-- Inter font from Google Fonts. preconnect = the browser opens the connection early, so the font arrives sooner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
