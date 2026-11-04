@@ -1,10 +1,10 @@
 # 🔁 CodeLoop
 
-**CodeLoop** is a full-stack web app to track your DSA practice, revise smartly, and stay consistent. It comes preloaded with the **NeetCode 150** problem list, so you can focus on solving instead of managing spreadsheets.
+**CodeLoop** is a full-stack web app to track your DSA practice, revise smartly, and stay consistent. It comes preloaded with the **NeetCode 150**, **Blind 75**, **Striver's A2Z**,  problem lists, so you can focus on solving instead of managing spreadsheets.
 
 ## ✨ Features
 
-- **NeetCode 150 preloaded**: topic-wise problem list with difficulty tags
+- **3 preloaded sheets**: topic-wise problem list with difficulty tags
 - **Progress tracking**: mark problems as solved and track topic-wise completion
 - **Revision system**: flag problems to revisit and review them on the Revision page
 - **Notes**: add personal notes to every problem
@@ -28,7 +28,7 @@
 | Backend | Node.js, Express.js |
 | Database | MongoDB, Mongoose |
 | Auth | JWT, Google OAuth, GitHub OAuth, Email OTP |
-| Deployment | Vercel (frontend) |
+| Deployment | Vercel (frontend) | Render(Backend)
 
 ## 📁 Project Structure
 
@@ -95,7 +95,7 @@ GITHUB_CLIENT_SECRET=your_github_client_secret
 CLIENT_URL=http://localhost:5173
 ```
 
-Seed the NeetCode 150 problems and start the server:
+Seed the NeetCode 150, blind 75, Striver's A2Z problems and start the server:
 
 ```bash
 node seed/seedProblems.js
@@ -132,7 +132,7 @@ Never commit your `.env` files. They are already listed in `.gitignore`.
 ## 🗺️ Roadmap
 
 - [ ] Spaced repetition based revision reminders
-- [ ] More problem sets (Blind 75, Striver SDE Sheet)
+- [ ] More problem sets (Neetcode 250, Striver SDE Sheet)
 - [ ] Streak notifications
 - [ ] Export progress as PDF / CSV
 
